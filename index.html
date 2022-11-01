@@ -14,14 +14,11 @@
     The end-to-end non-autoregressive text-to-speech (TTS) model has been able to synthesize high-quality speech, such as Fastspeech2. The encoder of conventional TTS can already extract hidden representations of phoneme sequences. However, due to finite labeled corpus data, the TTS model is still prone to synthesizing speech with unnatural prosody and inappropriate duration. In this paper, we use a large-scale corpus trained pre-training language model (PLM) as the encoder to obtain a more robust hidden representation with context information. To further enhance the quality of the synthesized speech, we consider combining spectral convergence (SC) loss based on the acoustic aspect with VGG loss and total variation (TV) loss based on the image aspect. Experiments show that our proposed method can synthesize speech with more natural prosody, more accurate duration and less noise in a Mandarin test set.
   </p>
   <p><b>说明:</b>
-    除第一列为ground-truth、第二列为ground-truth经过hifigan生成的语音外，其余模型生成的语音均被打乱，请按照序号在excel表格中给各语音进行打分。
-    对于每行语音均需评出MOS以及偏好分数。其中，MOS评分标准参照下表；偏好评分依据噪音最小（noise）、音长最合适（duration，每个音的持续时间）、韵律最自然（prosody）三个维度，在2-6号模型中分别选出最优的结果，将模型序号填入对应位置。
+    CMOS评分为两两比较评估，后面四种模型分别与第一个模型FastSpeech2进行比较，其中FastSpeech2分数固定为0，其余模型打分阈值在[-3, 3]之间，-3：最差，-2：差，-1：稍差，0：效果相同，1：稍好，2：好，3：最好。
   </p>
   <table border="1">
     <tr>
-      <th>Mos评分</th>
-      <th>评级</th>
-			<th>FastSpeech2</th>			<th>GANP-TTS</th>			<th>biaobei_addon</th>			<th>biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k</th>			<th>hifiganv7_gesw0x01_15k_0.5w_90k</th>      <th>流畅度</th>
+        <th>FastSpeech2</th>			<th>GANP-TTS</th>			<th>biaobei_addon</th>			<th>biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k</th>			<th>hifiganv7_gesw0x01_15k_0.5w_90k</th> 
 		<tr>
 			<td colspan="3">1.现场，锣鼓喧天，人头攒动。</td>
 		</tr>
