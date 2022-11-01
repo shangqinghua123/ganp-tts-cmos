@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh">
+<link rel="shortcut icon" href="logo.webp">
+<head>
+  <title>Audio Samples from "MLFP-TTS: MULTI LOSS FUNCTIONS CONSIDERED ON PRETRAINED TTS MODEL WITH MORE NATURAL PROSODY AND DURATION"</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class='section'>
+  <h1>Audio Samples from "MLFP-TTS: MULTI LOSS FUNCTIONS CONSIDERED ON PRETRAINED TTS MODEL WITH MORE NATURAL PROSODY AND DURATION"</h1>
+  <p><b>Authors: </b>Liang Tang, Qinghua Shang</p>
+  <p><b>Abstract:</b>
+    The end-to-end non-autoregressive text-to-speech (TTS) model has been able to synthesize high-quality speech, such as Fastspeech2. The encoder of conventional TTS can already extract hidden representations of phoneme sequences. However, due to finite labeled corpus data, the TTS model is still prone to synthesizing speech with unnatural prosody and inappropriate duration. In this paper, we use a large-scale corpus trained pre-training language model (PLM) as the encoder to obtain a more robust hidden representation with context information. To further enhance the quality of the synthesized speech, we consider combining spectral convergence (SC) loss based on the acoustic aspect with VGG loss and total variation (TV) loss based on the image aspect. Experiments show that our proposed method can synthesize speech with more natural prosody, more accurate duration and less noise in a Mandarin test set.
+  </p>
+  <p><b>说明:</b>
+    除第一列为ground-truth、第二列为ground-truth经过hifigan生成的语音外，其余模型生成的语音均被打乱，请按照序号在excel表格中给各语音进行打分。
+    对于每行语音均需评出MOS以及偏好分数。其中，MOS评分标准参照下表；偏好评分依据噪音最小（noise）、音长最合适（duration，每个音的持续时间）、韵律最自然（prosody）三个维度，在2-6号模型中分别选出最优的结果，将模型序号填入对应位置。
+  </p>
+  <table border="1">
+    <tr>
+      <th>Mos评分</th>
+      <th>评级</th>
+			<th>FastSpeech2</th>			<th>GANP-TTS</th>			<th>biaobei_addon</th>			<th>biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k</th>			<th>hifiganv7_gesw0x01_15k_0.5w_90k</th>      <th>流畅度</th>
+		<tr>
+			<td colspan="3">1.现场，锣鼓喧天，人头攒动。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/007067.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/007067.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/007067.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/007067.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/007067.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">2.假语村言别再拥抱我。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/000002.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/000002.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/000002.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/000002.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/000002.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">3.他先向我丢过一个飞吻来，如果不把它丢回去，难道您还让我留着它不成？</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/007523.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/007523.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/007523.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/007523.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/007523.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">4.你不是问我为什么做义工吗？</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005739.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005739.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005739.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005739.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005739.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">5.都快成年了还不知道还手啊！</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/009448.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/009448.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/009448.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/009448.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/009448.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">6.自从跟着冯巩上了春晚，他在外活动就经常打着冯巩的招牌。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/004924.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/004924.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/004924.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/004924.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/004924.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">7.奥巴马发表帐篷演讲。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/002773.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/002773.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/002773.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/002773.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/002773.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">8.后来我被选为嘎查这个村的村长。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/004090.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/004090.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/004090.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/004090.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/004090.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">9.其中网友“海洋生物小散打”的评论引起了记者的注意。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005828.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005828.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005828.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005828.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005828.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">10.人物”周刊则承诺实体版的订阅者可以免费阅读其电子版。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/004489.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/004489.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/004489.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/004489.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/004489.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">11.虽则如此，也要加以规范，不能任由泛滥，谬种流传。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/008966.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/008966.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/008966.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/008966.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/008966.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">12.他性格爽朗，有问必答。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/007607.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/007607.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/007607.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/007607.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/007607.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">13.根据线索显示，郑某既有可能已经改名换姓，漂白身份。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/008532.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/008532.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/008532.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/008532.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/008532.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">14.屋内东西摆放凌乱，制作馅料用的作料堆满一地。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/002495.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/002495.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/002495.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/002495.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/002495.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">15.要先结婚才可以生孩子。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/004375.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/004375.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/004375.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/004375.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/004375.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">16.只听她弱弱的来一句：你占有我，我占有你。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005506.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005506.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005506.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005506.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005506.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">17.花园外墙采用通透的铁栏、矮门，与弄堂起到“共享”的作用。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/001301.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/001301.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/001301.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/001301.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/001301.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">18.停建事件变成“风水门”报道后，王银峰更是作了伪证。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/006920.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/006920.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/006920.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/006920.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/006920.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">19.在新兴的网络行业，丑闻也层出不穷。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005766.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005766.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005766.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005766.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005766.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">20.袁莉代言红十字会惹争议。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/001646.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/001646.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/001646.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/001646.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/001646.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">21.但她伤口的疼痛依旧，不时发出哼哼声。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/006514.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/006514.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/006514.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/006514.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/006514.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">22.这把球员们激动坏了。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/008353.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/008353.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/008353.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/008353.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/008353.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">23.阳光洒落，心却不暖。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/003513.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/003513.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/003513.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/003513.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/003513.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">24.事后警方证实，该案系纵火案。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005187.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005187.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005187.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005187.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005187.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">25.今天一美元回到兑换一点六六一雷亚尔的水平。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/003199.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/003199.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/003199.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/003199.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/003199.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">26.床头装有小巧的阅读灯，可进行九十度调整。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/004568.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/004568.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/004568.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/004568.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/004568.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">27.娃哈哈企业研究院副院长李言郡算是“苦主”之一。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/000110.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/000110.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/000110.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/000110.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/000110.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">28.几天后，鲁爹爹把质量检测报告单给一位医药专业人士看看。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/004421.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/004421.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/004421.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/004421.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/004421.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">29.除遭性侵外，上述案件以侵财型犯罪为主。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/001106.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/001106.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/001106.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/001106.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/001106.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">30.三月春来早，嫩芽挂树梢。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/000208.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/000208.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/000208.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/000208.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/000208.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">31.不少手机应用软件也瞅准了“数字化年俗”，推出拜年产品。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005558.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005558.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005558.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005558.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005558.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">32.成功是一种了不起的除臭剂。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/007488.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/007488.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/007488.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/007488.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/007488.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">33.上着课，我爸他烟瘾犯了，就想点烟。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/002737.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/002737.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/002737.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/002737.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/002737.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">34.还有部分担保公司涉及炒股配资业务。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/008006.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/008006.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/008006.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/008006.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/008006.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">35.容祖儿至今仍为没有向罗文拜师而耿耿于怀。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/000404.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/000404.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/000404.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/000404.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/000404.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">36.陈继明认为对方瞧不起他，两人发生抓扯。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/009776.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/009776.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/009776.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/009776.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/009776.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">37.景岗山的“帮派”正是巨星云集、大名鼎鼎的“六一班”。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/007349.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/007349.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/007349.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/007349.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/007349.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">38.采摘山核桃的农民一个趔趄跌下去，头碰到石头就可能摔死。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/001227.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/001227.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/001227.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/001227.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/001227.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">39.花城广场的夜晚灯光璀璨。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005423.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005423.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005423.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005423.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005423.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">40.二是三大拉动因素总体呈趋缓走势。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/006894.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/006894.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/006894.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/006894.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/006894.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">41.那要是有个病有个灾的，还得往城里折腾。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/003420.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/003420.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/003420.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/003420.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/003420.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">42.余雄是个少言的人，一心一意在吃面。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/009799.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/009799.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/009799.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/009799.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/009799.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">43.在药房，温家宝询问维吾尔医药和中药的区别。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/000984.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/000984.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/000984.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/000984.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/000984.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">44.两人对孙垚的劝阻不再理睬，坚持汇完款。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/005562.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/005562.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/005562.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/005562.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/005562.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">45.经查，男方患有弱精症，女方患有多囊卵巢综合征。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/002519.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/002519.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/002519.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/002519.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/002519.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">46.她要是我的朋友，我就劝她认了。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/008795.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/008795.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/008795.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/008795.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/008795.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">47.我们老班没那么严，还特别好，他会帮你下一些富有教育意义的电影。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/009183.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/009183.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/009183.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/009183.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/009183.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">48.结束泰国游后，周杰伦搂着妈妈步出桃园机场。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/009723.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/009723.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/009723.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/009723.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/009723.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">49.而家庭寄养计划的服务对象，以滞留时间较长的流浪儿为主。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/007762.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/007762.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/007762.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/007762.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/007762.wav"/></audio></td>
+		</tr>
+		<tr>
+			<td colspan="3">50.子淇又透露妹妹刚诞下孖仔，但会继续追女。</td>
+		</tr>
+		<tr>
+			<td><audio controls=""><source src="./tts_result/FastSpeech2/003846.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/GANP-TTS/003846.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_addon/003846.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/biaobei_22050_textgrid_3_encoderpretrainv0_without_loss_80k/003846.wav"/></audio></td>
+			<td><audio controls=""><source src="./tts_result/hifiganv7_gesw0x01_15k_0.5w_90k/003846.wav"/></audio></td>
+		</tr>
+  </table>
+</div>
+</body>
+</html>
